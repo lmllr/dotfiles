@@ -1,0 +1,18 @@
+# [cd](change directory) aliases
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
+alias .......='cd ../../../../../..'
+
+# [ls](list directory contents) aliases
+alias ls='exa --icons'
+alias ll='exa --long --icons'
+alias la='exa --long --icons -a'
+alias lt='exa --icons --tree'
+
+# Information
+alias myip='curl https://ipinfo.io/json'
+alias speedtest='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py'
+
