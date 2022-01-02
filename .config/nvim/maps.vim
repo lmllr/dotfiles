@@ -66,7 +66,9 @@ endfunction
 " ---------------------------------------------------------------------
 " Tab navigation like Firefox.
 "nnoremap <C-S-tab> :tabprevious<CR>
-nnoremap <C-tab>   :tabnext<CR>
+" nnoremap <C-S-tab>   :BufferLineCycleNext<CR>
+nnoremap gt   :BufferLineCycleNext<CR>
+nnoremap gT   :BufferLineCyclePrev<CR>
 nnoremap <C-t>     :tabnew<CR>
 " special map because of bufferline
 nnoremap <C-c>     :bdelete<CR>

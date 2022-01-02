@@ -205,8 +205,8 @@ au BufNewFile,BufRead *.fish set filetype=fish
 autocmd BufNewFile,BufRead *.go lua vim.lsp.buf.formatting()
 autocmd BufWritePre *.go lua goimports(1000)
 autocmd BufNewFile,BufRead *.go lua goimports(1000)
-
-
+" treat syntax highlighting of `*.gohtml` file extension as `html`
+autocmd BufNewFile,BufRead *.gohtml set filetype=html
 
 set suffixesadd=.js,.es,.jsx,.json,.css,.less,.sass,.styl,.php,.py,.md
 
