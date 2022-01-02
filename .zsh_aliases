@@ -6,6 +6,8 @@ alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 alias .......='cd ../../../../../..'
 
+alias timestamp='date "+%Y%m%d%H%M%S"'
+
 # [ls](list directory contents) aliases
 alias ls='exa --icons'
 alias ll='exa --long --icons'
