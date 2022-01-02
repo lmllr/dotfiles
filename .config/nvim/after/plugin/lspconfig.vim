@@ -42,9 +42,18 @@ nvim_lsp.solargraph.setup {
   filetypes = { "ruby" }
 }
 
+-- JS/TSX
+nvim_lsp.tsserver.setup {
+  on_attach = on_attach,
+  filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" },
+  root_dir = function() return vim.loop.cwd() end,
+  capabilities = capabilities
+}
+
 -- Go
 nvim_lsp.gopls.setup{
 	cmd = {'gopls'},
+  filetypes = { 'go', 'gohtml' },
 -- for postfix snippets and analyzers
 	capabilities = capabilities,
 	    settings = {
