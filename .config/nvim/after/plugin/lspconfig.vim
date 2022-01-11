@@ -28,6 +28,7 @@ local on_attach = function(client, bufnr)
 
   -- Autoformat on save
   -- on `:w` will format code
+  -- DANGER
   if client.resolved_capabilities.document_formatting then
     vim.api.nvim_command [[augroup Format]]
     vim.api.nvim_command [[autocmd! * <buffer>]]

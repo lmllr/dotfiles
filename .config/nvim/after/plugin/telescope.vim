@@ -10,10 +10,7 @@ local mappings = {}
 
 require("telescope").setup{
   defaults = {
-    pickers = {
-      -- , , 🔍
-      -- caret='',
-    },
+    prompt_prefix = ' ',
     mappings = {
       n = {
         ["<S-p>"] = action_layout.toggle_preview,
@@ -24,15 +21,18 @@ require("telescope").setup{
         ["<C-a>"] = actions.send_selected_to_qflist + actions.open_qflist,
       },
     },
-  }
+  },
+  pickers = {
+    find_files = { theme = "dropdown" },
+    live_grep = { theme = "dropdown" },
+    buffers = { theme = "dropdown" },
+    help_tags = { theme = "dropdown" },
+  },
 }
 EOF
 
 " Find files using Telescope command-line sugar.
-nnoremap <Leader>ff <Cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ prompt_prefix = ' ' }))<CR>
-
-nnoremap <Leader>fg <Cmd>lua require'telescope.builtin'.live_grep(require('telescope.themes').get_dropdown({ prompt_prefix = ' ' }))<CR>
-
-nnoremap <Leader>fb <Cmd>lua require'telescope.builtin'.buffers(require('telescope.themes').get_dropdown({ prompt_prefix = ' ' }))<CR>
-
-nnoremap <Leader>fh <Cmd>lua require'telescope.builtin'.help_tags(require('telescope.themes').get_dropdown({ prompt_prefix = ' ' }))<CR>
+nnoremap <Leader>ff <Cmd>Telescope find_files<CR>
+nnoremap <Leader>fg <Cmd>Telescope live_grep find_command=rg,--ignore,--hidden,--files,--column--line_number,--no-heading,--color=always,--smart-case<CR>
+nnoremap <Leader>fb <Cmd>Telescope buffers<CR>
+nnoremap <Leader>fh <Cmd>Telescope help_tags<CR>

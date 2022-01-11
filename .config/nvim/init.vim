@@ -8,6 +8,8 @@ scriptencoding utf-8
 " stop loading config if it's on tiny or small
 if !1 | finish | endif
 
+" always save to clipboard
+set clipboard=unnamedplus
 set nocompatible
 set noswapfile
 " set textwidth=80
