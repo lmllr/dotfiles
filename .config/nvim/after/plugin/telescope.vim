@@ -10,6 +10,7 @@ local mappings = {}
 
 require("telescope").setup{
   defaults = {
+    path_display = { "truncate" },
     prompt_prefix = ' ',
     mappings = {
       n = {
@@ -23,10 +24,38 @@ require("telescope").setup{
     },
   },
   pickers = {
-    find_files = { theme = "dropdown" },
-    live_grep = { theme = "dropdown" },
-    buffers = { theme = "dropdown" },
-    help_tags = { theme = "dropdown" },
+    -- find_files = { theme = "dropdown" },
+    find_files = {
+      theme = "dropdown",
+      previewer = false,
+      layout_config = {
+        width = 0.9,
+      },
+    },
+    -- live_grep = { theme = "dropdown" },
+    live_grep = {
+      theme = "dropdown",
+      previewer = false,
+      layout_config = {
+        width = 0.9,
+      },
+    },
+    -- buffers = { theme = "dropdown" },
+    buffers = {
+      theme = "dropdown",
+      previewer = false,
+      layout_config = {
+        width = 0.9,
+      },
+    },
+    -- help_tags = { theme = "dropdown" },
+    help_tags = {
+      theme = "dropdown",
+      previewer = false,
+      layout_config = {
+        width = 0.9,
+      },
+    },
   },
 }
 EOF
