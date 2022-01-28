@@ -17,4 +17,3 @@ alias lt='exa --icons --tree'
 # Information
 alias myip='curl https://ipinfo.io/json'
 alias speedtest='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py'
-
