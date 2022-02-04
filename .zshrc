@@ -24,6 +24,9 @@ source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # (no extra installation of anything! git alredy built in)
 #autoload -Uz compinit && compinit
 
+# XXX get rid of `%` at the end of line without <CR> XXX
+PROMPT_EOL_MARK=''
+
 # XXX IMPORTANT XXX
 # to use rbenv WITHOUT 'oh-my-zsh'
 # you need to init here in '.zshrc'

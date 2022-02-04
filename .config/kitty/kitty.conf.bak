@@ -1026,6 +1026,29 @@ cursor_shape block
 
 #: white
 
+mark1_foreground green
+
+#: Color for marks of type 1
+
+mark1_background #d33682
+
+#: Color for marks of type 1 (light steel blue)
+
+# mark2_foreground black
+
+#: Color for marks of type 2
+
+# mark2_background #f2dcd3
+
+#: Color for marks of type 1 (beige)
+
+# mark3_foreground black
+
+#: Color for marks of type 3
+
+# mark3_background #f274bc
+
+#: Color for marks of type 3 (violet)
 #: }}}
 
 #: }}}
