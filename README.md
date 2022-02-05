@@ -1,2 +1,2 @@
 # Dotfiles
-![Screenshot](images/Screenshot_1.png)
+![Screenshot](images/Screenshot_2.png)
