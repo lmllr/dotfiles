@@ -86,6 +86,7 @@ function! ActiveStatus()
   " %b: Value of character under cursor
   " %B: As above, in hexadecimal
   " let statusline.="\ [\ %b0x%B\ ]\ "
+  " let statusline.="%{&fileencoding}"
   let statusline.="%*"
   let statusline.="%#SlBold#"
   " %l: Line number

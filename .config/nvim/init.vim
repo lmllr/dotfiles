@@ -66,6 +66,7 @@ set smarttab
 " indents
 filetype plugin indent on
 set shiftwidth=2
+"set foldcolumn=4 " this will change space next to line numbers
 set tabstop=2
 set ai "Auto indent
 set si "Smart indent 

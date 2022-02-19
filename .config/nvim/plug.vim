@@ -79,5 +79,8 @@ Plug 'junegunn/fzf.vim'
 " https://github.com/nelstrom/vim-visual-star-search
 Plug 'nelstrom/vim-visual-star-search'
 
+" Show signs for changes in git
+Plug 'airblade/vim-gitgutter'
+
 call plug#end()
 
