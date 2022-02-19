@@ -90,7 +90,10 @@ function goimports(timeoutms)
   -- should be executed first.
   if action.edit or type(action.command) == "table" then
     if action.edit then
-      vim.lsp.util.apply_workspace_edit(action.edit)
+      -- set offset_encoding
+      -- can be `utf-8`, `utf-16`, `utf-32`
+      offset_encoding = "utf-8"
+      vim.lsp.util.apply_workspace_edit(action.edit, offset_encoding)
     end
     if type(action.command) == "table" then
       vim.lsp.buf.execute_command(action.command)
