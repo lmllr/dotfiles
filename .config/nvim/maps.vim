@@ -4,7 +4,7 @@
 inoremap jk <ESC>
 " map 'CONTROL+n' to nerdtree
 " nmap <C-n> :NERDTreeToggle<CR>
-nnoremap <C-n> :NvimTreeToggle<CR>
+nnoremap <C-n> :Vexplore<CR>
 " set NEW EMMET LEADER KEY
 let g:user_emmet_leader_key=','
 " set GLOBAL LEADER KEY

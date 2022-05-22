@@ -256,6 +256,35 @@ endif
 
 "}}}
 
+" Netrw (FILEBROWSER) setup "{{{
+" ---------------------------------------------------------------------
+" There are 4 different view types:
+"   1. thin
+"   2. long
+"   3. wide
+"   4. tree
+let g:netrw_liststyle = 3
+
+" Changing how files are opened
+" 1 - open files in a new horizontal split
+" 2 - open files in a new vertical split
+" 3 - open files in a new tab
+" 4 - open in previous window
+let g:netrw_browse_split = 3
+
+" Set the width of the directory explorer
+let g:netrw_winsize = 25
+
+" Removing the banner
+" let g:netrw_banner = 0
+
+" augroup ProjectDrawer
+"   autocmd!
+"   autocmd VimEnter * :Vexplore
+" augroup END
+
+"}}}
+
 " Extras "{{{
 " ---------------------------------------------------------------------
 set exrc
