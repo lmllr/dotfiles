@@ -21,7 +21,8 @@ if has("nvim")
   " https://github.com/neovim/nvim-lspconfig
   Plug 'neovim/nvim-lspconfig'
   " https://github.com/tami5/lspsaga.nvim
-  Plug 'tami5/lspsaga.nvim'
+  " https://github.com/kkharji/lspsaga.nvim
+  Plug 'kkharji/lspsaga.nvim'
   " https://github.com/tree-sitter/tree-sitter
   Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
   " https://github.com/hrsh7th/nvim-cmp
