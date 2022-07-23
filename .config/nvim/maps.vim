@@ -109,4 +109,10 @@ nmap <C-w><up> <C-w>+
 nmap <C-w><down> <C-w>-
 "}}}
 
+" Tcomment "{{{
+" ---------------------------------------------------------------------
+nnoremap <C-/><C-/> :TComment<CR>
+inoremap <C-/><C-/> <Esc>:TComment<CR>i
+"}}}
+
 " vim: set foldmethod=marker foldlevel=0:
